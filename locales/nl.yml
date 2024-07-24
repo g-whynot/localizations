@@ -1,0 +1,208 @@
+    localizations/locales/en.yml
+
+
+https://github.com/usetrmnl/localizations/blob/master/locales/en.yml
+
+nl:
+
+  # global, logged out, and auth-related
+  add: Toevoegen
+  add_new: Nieuwe toevoegen
+  already_have_account: Ik heb al een account. # signup form cta
+  back: Terug
+  buy_now: Koop nu.
+  cancel: Afbreken.
+  change_password: Wachtwoord wijzigen.
+  charge_level: Laadniveau.
+  charged: Geladen.
+  close: Sluiten.
+  confirm_change_password: Wachtwoord wijzigen.
+  confirm_password: Nieuw wachtwoord bevestigen.
+  create_an_account: Nieuw account aanmaken. # login form cta
+  days: dagen
+  delete: verwijderen
+  device_id: Apparaat ID
+  edit: Aanpassen
+  email_address: Emailadres
+  first_name: Voornaam
+  forgot_password: Ik ben mij wachtwoord vergeten. # login form link
+  forgot_password_title: Hier gaan we weer. # heading on /password/new
+  get_started: We helpen je op weg.
+  identify: Identificeren
+  keep_me_signed_in: Blijf ingelogd
+  knowledge_base: Knowledge base
+  last_name: Achternaam
+  login: Login
+  log_out: uitloggen
+  minimum_characters: minimaal aantal karakters # ex: 8 characters minimum
+  mins: mins # 'minutes' abbreviation
+  new_password: Nieuw wachtwoord.
+  password: Wachtwoord
+  reset_password: Nieuw wachtwoord instellen
+  sign_in: Login # login form cta
+  sign_up: Inschrijven # logged out navigation
+  save: Opslaan
+  update: Wijzigen
+  view: Opvragen
+  welcome: Welkom # login form heading
+
+  # views by resource (device, plugins, playlists, account, etc)
+  account:
+    index:
+      title: Account
+      tagline: Beheer je accountgegevens
+      email_address: Emailadres
+      email_address_hint: Gebruikt om in te loggen in TRMNL en om systeemberichten te ontvangen.
+      first_name_hint: Je voornaam om TRMNL interface berichten comfortabel te maken.
+      last_name_hint: Je achternaam om TRMNL interface berichten comfortabel te maken.
+      password_hint: Wordt gebruikt om je TRMNL account te beveiligen.
+      session: Sessie
+      session_hint: Je bent ingelogd als gebruiker: %{user}
+      time_zone: Tijd zone
+      time_zone_hint: Wordt gebruikt voor info updates and apparaat slaaptijd.
+
+    # toast messages
+    update:
+      success: Profieldata succesvol aangepast.
+  dashboard:
+    index:
+      title: Dashboard
+      last_7_days: Afgelopen week
+      last_30_days: Afgelopen maand
+      last_90_days: Afgelopen kwartaal
+      today: Vandaag
+      yesterday: Gisteren
+    health: # partial (widget)
+      bad: Sommige plugins hebben een probleem.
+      good: Alle plugins zijn in orde.
+      next_steps: We sturen een update als alles ok is.
+    news: # partial (widget)
+      title: Nieuws
+    playlists: # partial (widget)
+      title: Playlists
+      cta: Ga naar Playlists
+      pieces_of_content_displayed: Delen van inhoud voorgesteld.
+    plugins: # partial (widget)
+      title: Plugins
+      cta: Ga naar Plugins
+      connected: Verbonden
+      new_and_popular: Nieuw en populair
+    time_saved: # partial (widget)
+      title: Tijd bespraard.
+      cta: Lees over
+  devices:
+    edit:
+      back_to_devices: Terug naar apparaten
+      battery_consumption: Batterij verbruik.
+      battery_consumption_hint: Bespaar batterijgebruik door de slaapmodus te activeren van 22:00 tot 06:00 uur. 
+      device_name: Apparaatnaam
+      device_name_hint: We gebruiken dit om de TRMNL interface gebruiksvriendelijker te maken
+      edit_device: Apparaat aanpassen
+      identify: Identificeren
+      identify_device: Identificeer apparaat
+      identify_device_hint: Klik hier om een scherm met apparaat identificatie te laten zien.
+      mirror: Spiegel
+      mirror_device: Spiegel een ander apparaat.
+      mirror_device_hint: [TODO] Provide a (shareable) Device ID to mirror its playlist. Your playlist will still be displayed.
+      sleep_mode: Slaapmodus
+      sleep_mode_hint: Optimaliseer de ververssnelheid, om de schermupdates en batterijduur te optimiseren.
+      unlink: Verbinding verbreken.
+      unlink_device: Apparaatverbinding verbreken
+      unlink_device_hint: [TODO]Unlinking a TRMNL device makes it safe to re-sell or give to someone else.
+      visibility: Zichtbaarheid
+      visibility_hint: [TODO] Make your TRMNL device mirrorable by changing the settings below.
+      your_device: Jouw TRMNL
+    index:
+      title: Apparaten
+      tagline: Jouw TRMNL apparaten
+      add_device_modal_title: Voeg een nieuw apparaat toe.
+      add_first_device: Begin met het toevoeg van je eerste apparaat!
+
+    # toast messages
+    associate:
+      error: Fout bij verbinden apparaat.
+      success: Apparaat succesvol verbonden.
+    dissociate:
+      error: Fout bij verbinding verbreken apparaat.
+      success: Apparaat verbinding succesvol verbroken.
+    identify:
+      error: Fout bij updaten apparaat.
+      success: Apparaat indentificatie verzocht.
+    mirror:
+      error: Fout spiekelen apparaat.
+      error_not_shared: Aangegeven apparaat ID is niet spiegelbaar.
+      error_oneself: Kan jezelf niet spieglen. 
+      success: Apparaat %{friendly_id} succesvol gespiegeld.
+    switch:
+      error: Fout bij wisselen apparaat.
+	  success: Apparaat wisselen succesvol.
+    update:
+      error: Fout bij updaten instellingen apparaat.
+      success: "%{device} apparaat instelling succresvol gewijzigd."
+  playlists:
+    index:
+      title: Playlist
+      tagline: Kies wat er zichtbaar is op
+      add_first_device_cta: Begin met het __toevoegen_ van je eerste TRMNL apparaat!
+      add_to_playlist: Toevoegen aan playlist
+      create_first_playlist_cta: Maak je eerste playlist na het __verbinden__ van je eerste plugin!
+    playlist: # partial (single item)
+      delete: Ben je er zeker van dat je dit item wilt verwijderen? De plugin blijft verbonden, maar is niet meer zichtbaar op je apparaat.
+      displayed_now: Nu weergegeven.
+      not_displayed_yet: Nog niet weergegeven.
+      remove_from_playlist: Verwijderen uit playlist
+
+    # toast messages
+    create:
+      error: Fout bij aanpassen van playlist
+      success: Playlist is aangepast
+    destroy:
+      error: Fout bij verwijderen uit playlist
+      success: Plugin verwijderd uit playlist
+    update:
+      success: Playlist volgorde aangepast
+  plugins:
+    index:
+      title: Plugins
+      tagline: Wat wil je op je TRMNL laten zien?
+      available: Beschikbaar
+      connected: Verbonden
+    search: # partial (search box)
+      placeholder: Zoek Plugins
+  plugin_settings:
+    active: Aktief
+    delete: Dit verwijdert de instellingen van de plugin. Als je de plugin wilt uitschakelen, verwijder het uit de playlist.
+    inactive: Inaktief
+    no_plugin_settings_found: Geen instellingen van de plugin gevonden. # empty state - should not appear
+    form:
+      active_hint: Maak de plugin zichtbaar of onzichtbaar op je apparaat.
+      back_to_plugin: Terug naar %{plugin}
+      back_to_plugins: Terug naar Plugins
+      connect_with: Verbind met %{plugin}
+      force_refresh: Verversen.
+      force_refresh_hint: This feature is designed for testing only - please do not abuse it.
+      force_refresh_click_here: Verversen door hier te klikken.
+      force_refresh_click_here_hint: Genereer meteen een nieuw scherm.
+      learn_more: Lees meer over deze plugin in onze kennisbank.
+      link_oauth: Account verbinden
+      link_oauth_hint: Voor je doorgaat, volg de volgende toegansprocedure bij deze %{plugin}
+      multiple_instances_hint: Je kan meer dan een van deze plugins draaien.
+      name: Naam
+      name_hint: Geef een naam op voor handig zoeken.
+      plugin_uuid: Plugin UUID
+      plugin_uuid_hint: Gebruik dit om plugin Webhook API requests te doen.
+      preview: Preview - your device will show actual data
+      refresh_rate: Ververstempo
+      refresh_rate_hint: Stel de verversfrequentie in van deze plugin. 
+      refreshed: Vernieuwd
+      visit_docs: Ga naar de codumentatie.
+
+    # toast messages
+    create:
+      success: Plugin is aangemaakt en toegevoegd aan je apparaat.
+      playlist: playlist
+    destroy:
+      success: Plugin verwijderd
+    handle_canceled_consent: Toestemming afgebroken, graag nogmaals proberen.
+    update:
+      success: Plugin configuratie aanpassing is succesvol verwerkt.
